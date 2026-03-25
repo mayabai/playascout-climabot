@@ -1,6 +1,6 @@
 import React from 'react';
 
-const WA_NUMBER = '5219981234567'; // Número de CancunBot - cambiar en producción
+const WA_NUMBER = '5219992175550';
 const WA_MSG = encodeURIComponent('¡Hola CancunBot! 🌴 Quiero información del clima en la Riviera Maya');
 
 export default function CTAWhatsApp({ tema }) {
