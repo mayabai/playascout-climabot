@@ -1,0 +1,27 @@
+{
+  "name": "ClimaBot Riviera Maya",
+  "short_name": "ClimaBot",
+  "description": "Clima hiperlocal para turistas en la Riviera Maya",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1565C0",
+  "theme_color": "#1565C0",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["weather", "travel"],
+  "lang": "es",
+  "dir": "ltr"
+}
