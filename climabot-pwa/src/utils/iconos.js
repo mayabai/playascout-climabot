@@ -17,7 +17,7 @@ const iconMap = {
 
 export function iconoEmoji(code) {
   if (!code) return '🌤️';
-  // Si ya es un emoji, devolverlo tal cual
-  if (/\p{Emoji}/u.test(code)) return code;
+  // Si no esta en el mapa, devolverlo tal cual (puede ser emoji)
+  if (!iconMap[code]) return code;
   return iconMap[code] || '🌤️';
 }

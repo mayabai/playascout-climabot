@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+try {
+  ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
-  </React.StrictMode>
-);
+  );
+} catch (err) {
+  document.getElementById('root').innerHTML = '<pre style="padding:20px;color:red">' + err.message + '\n' + err.stack + '</pre>';
+}
 
 // Service Worker registration
 if ('serviceWorker' in navigator) {
